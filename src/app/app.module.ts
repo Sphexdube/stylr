@@ -11,6 +11,9 @@ import { NavComponent } from './nav/nav.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 
+import { NgxGalleryModule } from 'ngx-gallery';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +24,7 @@ import { environment } from '../environments/environment';
   ],
   imports: [
     BrowserModule,
+    NgxGalleryModule,
     AppRoutingModule,
     HttpClientModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })

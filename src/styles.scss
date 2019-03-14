@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+body {
+  // background: #000;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  // color:#000;
+  margin: 0;
+  padding: 0;
+}
+
+.ngx-gallery-thumbnail {
+  border: none;
+}
+
+.ngx-gallery-thumbnail.ngx-gallery-active {
+  border: 2px solid lightgray;
+}
+
+
+.ngx-gallery-image-text {
+  font-family: monospace;
+  text-align: left !important;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+
+.ngx-gallery-thumbnails {
+  transition: none !important;
+}
+
+.ngx-gallery-animation-slide, .ngx-gallery-image {
+  transition: none !important;
+}

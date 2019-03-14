@@ -1,4 +1,7 @@
-<nav></nav>
+<!-- <nav></nav>
 <p>
   {{items | json}}
-</p>
+</p> -->
+
+
+<ngx-gallery [options]="galleryOptions" [images]="galleryImages" (change)="onChange($event)"></ngx-gallery>
